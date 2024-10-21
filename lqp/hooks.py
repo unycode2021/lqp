@@ -4,11 +4,15 @@ app_publisher = "Unycode Limited"
 app_description = "Random Number Generator for Lottery sequence"
 app_email = "cep@unycode.net"
 app_license = "mit"
+app_logo_url = "/assets/lqp/img/lqp_logo.jpeg"
 # required_apps = []
 
 # Includes in <head>
 # ------------------
-
+website_context = {
+    "favicon": "/assets/lqp/img/favicon.ico",
+    "splash_image": "/assets/lqp/img/lqp_logo.jpeg",
+}
 # include js, css files in header of desk.html
 # app_include_css = "/assets/lqp/css/lqp.css"
 # app_include_js = "/assets/lqp/js/lqp.js"
@@ -26,7 +30,16 @@ app_license = "mit"
 
 # include js in page
 # page_js = {"page" : "public/js/file.js"}
+brand_html = '<div><img src="/assets/lqp/img/logo.png"/> Dream Reader</div>'
 
+email_brand_image = "/assets/lqp/img/logo.png"
+
+default_mail_footer = """
+    <div>
+        Sent via <a href="https://lqp.unycode.net/#lqp?source=via_email_footer" target="_blank">Lottery Quick Print - LQP</a>
+        <p>Powered by Unycode Limited - All rights reserved</p>
+    </div>
+"""
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
@@ -55,6 +68,9 @@ app_license = "mit"
 # automatically create page for each record of this doctype
 # website_generators = ["Web Page"]
 
+# website_route_rules = [
+#     {"from_route": "/dreams/<path:app_path>", "to_route": "dreams"},
+# ]
 # Jinja
 # ----------
 
@@ -133,6 +149,12 @@ app_license = "mit"
 # Scheduled Tasks
 # ---------------
 
+scheduler_events = {
+        "all": [
+            "lqp.api.run_lqp_schedules",
+        ],
+    
+}
 # scheduler_events = {
 # 	"all": [
 # 		"lqp.tasks.all"
@@ -192,13 +214,12 @@ app_license = "mit"
 # User Data Protection
 # --------------------
 
-# user_data_fields = [
-# 	{
-# 		"doctype": "{doctype_1}",
-# 		"filter_by": "{filter_by}",
-# 		"redact_fields": ["{field_1}", "{field_2}"],
-# 		"partial": 1,
-# 	},
+user_data_fields = [
+	{
+		"doctype": "LQP Dream",
+		"redact_fields": ["name", "owner"],
+		"partial": 1,
+	},
 # 	{
 # 		"doctype": "{doctype_2}",
 # 		"filter_by": "{filter_by}",
@@ -211,7 +232,7 @@ app_license = "mit"
 # 	{
 # 		"doctype": "{doctype_4}"
 # 	}
-# ]
+]
 
 # Authentication and authorization
 # --------------------------------
@@ -226,4 +247,3 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
-

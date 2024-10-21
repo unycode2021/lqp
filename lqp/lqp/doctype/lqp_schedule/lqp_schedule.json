@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-09 15:01:47.730536",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "preset_name",
+  "frequency",
+  "date",
+  "time_slots",
+  "emails",
+  "column_break_qnji",
+  "preset",
+  "active",
+  "section_break_ihzk",
+  "run_log"
+ ],
+ "fields": [
+  {
+   "fieldname": "preset_name",
+   "fieldtype": "Data",
+   "label": "Preset Name"
+  },
+  {
+   "fieldname": "frequency",
+   "fieldtype": "Select",
+   "label": "Frequency",
+   "options": "daily\nweekly\nmonthly"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "time_slots",
+   "fieldtype": "Data",
+   "label": "Time Slots"
+  },
+  {
+   "fieldname": "emails",
+   "fieldtype": "Data",
+   "label": "Emails"
+  },
+  {
+   "fieldname": "column_break_qnji",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preset",
+   "fieldtype": "JSON",
+   "label": "Preset"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "section_break_ihzk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "run_log",
+   "fieldtype": "Table",
+   "label": "Run Log",
+   "options": "LQP Schedule Run"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-15 08:59:42.478746",
+ "modified_by": "Administrator",
+ "module": "LQP",
+ "name": "LQP Schedule",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

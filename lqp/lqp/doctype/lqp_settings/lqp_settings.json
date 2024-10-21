@@ -1,0 +1,53 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-08 17:34:23.791594",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dream_reader_api_key",
+  "dream_reader_api_url",
+  "lqp_schedule_limit"
+ ],
+ "fields": [
+  {
+   "fieldname": "dream_reader_api_key",
+   "fieldtype": "Data",
+   "label": "Dream Reader API Key"
+  },
+  {
+   "fieldname": "dream_reader_api_url",
+   "fieldtype": "Data",
+   "label": "Dream Reader API URL"
+  },
+  {
+   "default": "3",
+   "fieldname": "lqp_schedule_limit",
+   "fieldtype": "Int",
+   "label": "LQP Schedule Limit"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-10-11 12:33:18.456635",
+ "modified_by": "Administrator",
+ "module": "LQP",
+ "name": "LQP Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

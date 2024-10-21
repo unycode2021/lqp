@@ -1,0 +1,116 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-11 12:33:59.441590",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "dream",
+  "interpretation",
+  "column_break_vegw",
+  "lucky_numbers",
+  "share_dream",
+  "share_interpretation",
+  "dreamer",
+  "active",
+  "ip_address",
+  "enable_email_notification",
+  "enable_likes"
+ ],
+ "fields": [
+  {
+   "fieldname": "dream",
+   "fieldtype": "Long Text",
+   "label": "Dream"
+  },
+  {
+   "fieldname": "lucky_numbers",
+   "fieldtype": "Data",
+   "label": "Lucky Numbers"
+  },
+  {
+   "fieldname": "interpretation",
+   "fieldtype": "Long Text",
+   "label": "Interpretation"
+  },
+  {
+   "fieldname": "column_break_vegw",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "share_interpretation",
+   "fieldtype": "Check",
+   "label": "Share Interpretation"
+  },
+  {
+   "fieldname": "dreamer",
+   "fieldtype": "Data",
+   "label": "Dreamer"
+  },
+  {
+   "default": "0",
+   "fieldname": "share_dream",
+   "fieldtype": "Check",
+   "label": "Share Dream"
+  },
+  {
+   "default": "1",
+   "fieldname": "active",
+   "fieldtype": "Check",
+   "label": "Active"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "label": "IP Address"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_email_notification",
+   "fieldtype": "Check",
+   "label": "Enable Email Notification"
+  },
+  {
+   "default": "1",
+   "fieldname": "enable_likes",
+   "fieldtype": "Check",
+   "label": "Enable Likes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-14 00:48:18.438619",
+ "modified_by": "Administrator",
+ "module": "LQP",
+ "name": "LQP Dream",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "All",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Reader and LQP</title>
+    <meta name="author" content="Unycode Limited" />
+    <meta property="og:title" content="Dream Reader - Know your subconscious">
+    <meta property="og:description" content="Unlock the hidden messages in your dreams and reveal the secrets of your subconscious! With Dream Reader, not only will you gain personalized insights into your deepest thoughts, but you'll also get your lucky numbers to manifest success. Don't miss out—experience the power of your premonitions and get ahead of everyone else with the Stars guiding you!">
+    <meta property="og:image" content="/assets/lqp/img/logo.png">
+    <meta property="og:url" content="https://lqp.unycode.net/">
+    <link
+			rel="icon"
+			type="image/png"
+			href="/assets/lqp/img/favicon.png"
+		/>
+    <script type="module" crossorigin src="/assets/lqp/frontend/assets/index-CtKFT0M2.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/lqp/frontend/assets/index-XKlGIo6I.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    	<script>
+			window.csrf_token = "{{ csrf_token }}"
+			if (!window.frappe) window.frappe = {}
+			frappe.boot = {{ boot|json }}
+		</script>
+  </body>
+</html>

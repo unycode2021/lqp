@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lottery Quick Print - LQP</title>
+    <meta name="description" content="Lottery Quick Print (LQP) is a simple, fast, and easy-to-use app that generates random lottery numbers with just a tap. Perfect for players who want quick picks and better chances at winning.">
+    <meta name="keywords" content="lottery, quick pick, quick print, random numbers, lottery app, LQP, Lottery Quick Print">
+    <meta name="author" content="Unycode Limited">
+    <meta property="og:title" content="Lottery Quick Print - LQP">
+    <meta property="og:description" content="Generate random lottery numbers with just a tap. Try LQP now for your next lottery ticket!">
+    <meta property="og:image" content="/assets/lqp/img/lqp_logo.png">
+    <meta property="og:url" content="https://lqp.unycode.net/lqp">
+    <meta name="twitter:card" content="summary_large_image">
+   
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin-top: 20px;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+    <script>
+        setTimeout(function() {
+            window.location.href = "/#lqp";
+        }, 3000);
+    </script>
+</head>
+<body>
+    <div class="flex flex-col items-center justify-center h-screen w-full">
+           <img src="/assets/lqp/img/lqp_logo.png" alt="Lottery Quick Print Logo - by Unycode Limited">
+           <div class="loader mx-auto"></div>
+    </div>
+</body>
+</html>

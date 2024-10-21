@@ -1,0 +1,54 @@
+{% macro table(content, table_class) %}
+<table class="{{ table_class or '' }}" cellpadding="0" cellspacing="0" width="100%" align="center">
+	<tbody>
+		<tr>
+			<td align="center">
+				{{ content }}
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% endmacro %}
+
+{% macro body() %}
+<table width="100%" cellspacing="0" cellpadding="0">
+	<tbody>
+        {% if logo %}
+        <tr>
+            <td align="left" valign="middle">
+                <a href="{{ site_url or '' }}">
+                    <img
+                        src="{{ logo or '' }}"
+                        height="100"
+                        width="100" 
+                        align="left" 
+                        class="brand-logo"
+                    />
+                </a>
+            </td>
+        </tr>
+        {% endif %}
+		<tr>
+			<td align="center">
+				<div class="email-header-title">
+					Dream Reader and Lottery Quick Print Account
+				</div>
+			
+			</td>
+		</tr>
+		<tr>
+			<td align="center">
+                            <div class="email-header-subtitle">
+                                   {{ message}}
+                            </div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+{% endmacro %}
+
+<div class="body-table with-container">
+	<div class="body-content">
+		{{ table(table(body(), 'email-body'), 'email-container') }}
+	</div>
+</div>
